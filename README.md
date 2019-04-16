@@ -10,3 +10,8 @@ Do not commit anything to this repository
  - Implement List as a subclass of AbstractDataStructure
  - Check if List passes tests
  - Modify solver to use List
+ 
+ # Task 2
+ - Implement get_min for SortedList
+ - Implement simple way of adding element: add element to the end of the list then sort the list
+ - Compare performance of solver
