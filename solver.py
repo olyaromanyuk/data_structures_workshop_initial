@@ -1,5 +1,6 @@
 from board import Board
 import matplotlib.pyplot as plt
+from data_structures import List as DataStructure
 
 import time
 
@@ -9,8 +10,8 @@ class Solver():
         self.board = board
         self.twin_board = self.board.twin()
 
-        self.data_structure = []
-        self.twin_data_structure = []
+        self.data_structure = DataStructure()
+        self.twin_data_structure = DataStructure()
 
         self.states_explored = -1
 
@@ -19,7 +20,7 @@ class Solver():
         while True:
             self.states_explored += 1
             # print(current_state.moves_to_reach)
-            # print(current_state)
+            print(current_state)
             if current_state.is_solved():
                 self.solution = self._form_solution(current_state)
                 break
@@ -30,16 +31,14 @@ class Solver():
 
             for neighbor in current_state.neighbors():
                 if current_state.previous is None or not neighbor.has_same_data(current_state.previous):
-                    self.data_structure.append(neighbor)
+                    self.data_structure.add(neighbor)
 
             for neighbor in current_twin_state.neighbors():
                 if current_twin_state.previous is None or not neighbor.has_same_data(current_twin_state.previous):
-                    self.twin_data_structure.append(neighbor)
+                    self.twin_data_structure.add(neighbor)
 
-            current_state = min(self.data_structure)
-            self.data_structure.remove(current_state)
-            current_twin_state = min(self.twin_data_structure)
-            self.twin_data_structure.remove(current_twin_state)
+            current_state = self.data_structure.get_min()
+            current_twin_state = self.twin_data_structure.get_min()
 
     def _form_solution(self, last_state):
         solution = []
