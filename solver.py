@@ -1,6 +1,6 @@
 from board import Board
 import matplotlib.pyplot as plt
-from data_structures import SortedList as DataStructure
+from data_structures import SortedListWithBinarySearch as DataStructure
 
 import time
 
