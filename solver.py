@@ -1,6 +1,6 @@
 from board import Board
 import matplotlib.pyplot as plt
-from data_structures import SortedListWithBinarySearch as DataStructure
+from data_structures import Heap as DataStructure
 
 import time
 
@@ -53,14 +53,15 @@ class Solver():
 boards =[Board(3, [[ 1,  0,  2],[4,  6,  3],[7 , 5,  8 ]]),
          Board(3,[[ 0,  4,  1],[5,  3,  2],[7,  8,  6]]),
          Board(3,[[ 2,  0,  8],[1,  3,  5],[4,  6,  7]]),
-         Board(3, [[ 7,  4, 3],[ 2,  8,  6],[0,  5,  1]])]
+         Board(3, [[ 7,  4, 3],[ 2,  8,  6],[0,  5,  1]]),
+         Board(3,  [[6,  4,  7],[8,  5,  0],[3,  2,  1]])]
 
 
 #######################################
 # this board takes far too long to solve with list, save this for later
 # Board(3,  [[6,  4,  7],[8,  5,  0],[3,  2,  1]])]
 
-optimal_moves = [5,10,15,20]
+optimal_moves = [5,10,15,20, 31]
 states_explored = []
 times = []
 average_time_per_step = []
