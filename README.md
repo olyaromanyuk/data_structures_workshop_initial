@@ -15,3 +15,7 @@ Do not commit anything to this repository
  - Implement get_min for SortedList
  - Implement simple way of adding element: add element to the end of the list then sort the list
  - Compare performance of solver
+ 
+ # Task 3
+ - Implement adding of element that searches for the right position in the list
+ - Compare performance of solver
