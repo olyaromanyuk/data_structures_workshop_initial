@@ -19,3 +19,9 @@ Do not commit anything to this repository
  # Task 3
  - Implement adding of element that searches for the right position in the list
  - Compare performance of solver
+ 
+ # Links
+  - http://www.cs.princeton.edu/courses/archive/spr18/cos226/assignments/8puzzle/index.html
+  - https://www.geeksforgeeks.org/binary-heap/
+  - https://www.coursera.org/learn/algorithms-part1
+  - https://www.coursera.org/specializations/algorithms
