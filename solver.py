@@ -1,6 +1,6 @@
 from board import Board
 import matplotlib.pyplot as plt
-from data_structures import List as DataStructure
+from data_structures import SortedList as DataStructure
 
 import time
 
@@ -20,7 +20,7 @@ class Solver():
         while True:
             self.states_explored += 1
             # print(current_state.moves_to_reach)
-            print(current_state)
+            # print(current_state)
             if current_state.is_solved():
                 self.solution = self._form_solution(current_state)
                 break
