@@ -1,6 +1,1 @@
 from data_structures.AbstractStructure import AbstractStructure
-from data_structures.List import List
-from data_structures.SortedList import SortedList
-from data_structures.SortedListWithInsert import SortedListWithInsert
-from data_structures.SortedListWithBinarySearch import SortedListWithBinarySearch
-from data_structures.Heap import Heap
