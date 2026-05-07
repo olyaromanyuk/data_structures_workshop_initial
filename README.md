@@ -34,4 +34,4 @@ Do not commit anything to this repository
   - https://www.coursera.org/learn/algorithms-part1
   - https://www.coursera.org/specializations/algorithms
 
-  - Adding this line as a test. Another test. Test.
+  - Adding this line as a test. Another test. Test. Test.
